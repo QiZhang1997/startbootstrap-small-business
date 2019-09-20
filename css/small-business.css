@@ -11,3 +11,8 @@ header {
   padding-top: 44px;
   padding-bottom: 44px;
 }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Times, sans-serif, Arial, "Noto Sans";
+  font-weight: bold;
+}
