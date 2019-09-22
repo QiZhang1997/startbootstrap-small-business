@@ -70,24 +70,105 @@
   <!-- Page Content -->
   <div class="container">
 
-    <div class="row no-gutters position-relative border-bottom">
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
       <div class="col-md-3 mb-md-0 p-md-4">
-        <img src="images/2013-asplos-mirage.png" class="w-100" alt="#">
+        <img src="images/FastBuild.png" class="w-100" alt="#">
       </div>
       <div class="col-md-9 position-static p-4 pl-md-0">
-        <h3 class="mt-0">Heading</h3>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        <h5 class="mt-0">FastBuild: Accelerating Docker Image Building for Efficient Development and Deployment of Container</h5>
+        <p>We implemented FastBuild to accelerate docker image building.
+          FastBuild maintains a local file cache to
+        minimize the expensive file downloading. To further accelerate the
+        image building, FastBuild overlaps operations of instructions' execution,
+        and writing intermediate image layers to the disk.</p>
         <a href="#">Learn more</a>
       </div>
     </div>
 
-    <div class="row no-gutters position-relative border-bottom">
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
       <div class="col-md-3 mb-md-0 p-md-4">
-        <img src="images/2014-cacm-unikernels-thumb.jpg" class="w-100" alt="#">
+        <img src="images/AdaptiveResourceViewsforContainers.png" class="w-100" alt="#">
       </div>
       <div class="col-md-9 position-static p-4 pl-md-0">
-        <h3 class="mt-0">Heading</h3>
-        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        <h5 class="mt-0">Adaptive Resource Views for Containers</h5>
+        <p>We develop a per-container view of resources to
+          export information on the actual resource allocation to containerized
+          applications. The central design of the resource view is a per-
+          container <code>sys_namespace</code> that calculates the effective capacity of
+          CPU and memory in the presence of resource sharing among containers.
+          We further create a virtual <code>sysfs</code> to seamlessly interface
+          user space applications with <code>sys_namespace</code>.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
+      <div class="col-md-3 mb-md-0 p-md-4">
+        <img src="images/CNTC.png" class="w-100" alt="#">
+      </div>
+      <div class="col-md-9 position-static p-4 pl-md-0">
+        <h5 class="mt-0">CNTC: A Container Aware Network Traffic Control Framework</h5>
+        <p>We propose a Container Network Traffic Control (<i>CNTC</i>)
+          framework which can provide strong isolation and container-level management
+          for network resource with joint consideration of container characteristics
+          and quality of service. To simplify the traffic control, we also design a
+          series of APIs which allow inexpert programmers to perform complicated
+          traffic control on each container.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
+      <div class="col-md-3 mb-md-0 p-md-4">
+        <img src="images/Container-BasedCustomizationApproachforMobileEnvironmentsonClouds.png" class="w-100" alt="#">
+      </div>
+      <div class="col-md-9 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Container-Based Customization Approach for Mobile Environments on Clouds</h5>
+        <p>When building a mobile cloud platform (<i>MCP</i>), one of
+          the most important things is to provide an execution environment
+          for mobile applications. we propose a unified and effective
+          approach for customizing Android environments on clouds. The approach
+          provides a container-based solution to custom-tailor Android OS
+          components, as well as a way to run Android applications for different
+          scenarios.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
+      <div class="col-md-3 mb-md-0 p-md-4">
+        <img src="images/Container-BasedCloudPlatformforMobileComputationOfﬂoading.png" class="w-100" alt="#">
+      </div>
+      <div class="col-md-9 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Container-Based Cloud Platform for Mobile Computation Offloading</h5>
+        <p>Many efforts have been made to improve the performance
+          and reduce energy consumption of mobile devices by offloading
+          computational codes to the cloud. We analyze the characteristics of typical
+          offloading workloads and design our platform solution accordingly, named Rattrap.
+          Rattrap develops a new runtime environment, Cloud Android
+          Container, for mobile computation offloading, replacing heavy-
+          weight virtual machines (<i>VMs</i>).Our design exploits the idea
+          of running operating systems with differential kernel features
+          inside containers with driver extensions, which partially breaks
+          the limitation of OS-level virtualization.</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+
+    <div class="row no-gutters position-relative border-bottom shadow my-4">
+      <div class="col-md-3 mb-md-0 p-md-4">
+        <img src="images/APerformanceStudyofContainersinCloudEnvironment.png" class="w-100" alt="#">
+      </div>
+      <div class="col-md-9 position-static p-4 pl-md-0">
+        <h5 class="mt-0">A Performance Study of Containers in Cloud Environment</h5>
+        <p>In this paper, we carry
+          out a performance study to explore the appropriate way to use containers
+          from different perspectives. We first conduct a series of experiments to
+          measure performance differences between application containers and
+          system containers, then evaluate the overhead of extra virtual machine layer
+          between the bare metal and containers, and finally inspect the service
+          quality of ECS (<i>Amazon EC2 Container Service</i>) and GKE (<i>Google
+            Container Engine</i>).</p>
         <a href="#">Learn more</a>
       </div>
     </div>
