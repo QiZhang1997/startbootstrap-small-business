@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ContainerOS Blogs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Container Community</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">News
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <!--li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li-->
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-secondary text-white">
+      <div class="container text-center">
+          <h1>PROJECTS</h1>
+          <p class="lead">Projects of Our Research Team</p>
+      </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+   
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-md-9 col-md-offset-2">
+
+        <!-- Title -->
+        <h2 class="mt-4">A Performance Study of Containers in Cloud Environment</h2>
+
+        <!-- Author -->
+        <p class="lead">
+          by Bowen Ruan, Hang Huang, Song Wu, and Hai Jin
+
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Published on APSCC 2016</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="../images/APerformanceStudyofContainersinCloudEnvironment.png" width="600" height="300"alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+
+        <p>Container technology has gained great popularity since containers could provide near-native
+            performance in cloud environment. According to diﬀerent design purposes and underlying
+            implementations, containers could be classiﬁed into application containers (e.g., <i>Docker</i>)
+            and system containers (e.g., <i>LXC</i>). The diversity of containers may lead to a confusing choice
+            about which kind of container is suitable for different usage scenarios. Meanwhile, the
+            architectures of public container services are quite controversial because cloud platforms
+            tend to run containers in virtual machines. From the perspective of performance, an extra
+            virtual machine layer between the bare metal and containers probably brings in unnecessary
+            performance overhead. In this paper, we carry out a performance study to explore the appropriate
+            way to use containers from diﬀerent perspectives. We ﬁrst conduct a series of experiments
+            to measure performance diﬀerences between application containers and system containers, then
+            evaluate the overhead of extra virtual machine layer between the bare metal and containers,
+            and ﬁnally inspect the service quality of ECS (<i>Amazon EC2 Container Service</i>) and GKE (<i>Google Container Engine</i>).
+            Our results show that system containers are more suitable to sustain I/O-bound workload than
+            application containers, because application containers will suﬀer high I/O latency due to layered
+            ﬁle system. Running containers in virtual machine would result in severe disk I/O performance degradation
+            up to 42.7% and network latency up to 233%. We also ﬁnd out ECS oﬀers better performance than GKE,
+            and cloud platforms could acquire better performance by running containers directly on the bare metal.</p>
+
+        <hr>
+      </div>
+
+        <div class="col-md-3 pt-md-4">
+            <h3>KEYWORDS</h3>
+            <p class="text-danger keywords">Container technology</p>
+            <p class="text-danger keywords">Cloud platform</p>
+            <p class="text-danger keywords">Performance comparison</p>
+            <p class="text-danger keywords">Service quality</p>
+            <p class="text-danger keywords">Virtualization overhead</p>
+        </div>
+
+        <p>
+            <a class="btn btn-secondary" href="../papers/APerformanceStudyofContainersinCloudEnvironment.pdf" role="button">
+                View the paper
+            </a>
+        </p>
+   
+     </div>
+   </div>	 
+
+  
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ContainerOS 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

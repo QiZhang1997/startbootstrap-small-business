@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ContainerOS Blogs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Container Community</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">News
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <!--li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li-->
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-secondary text-white">
+      <div class="container text-center">
+          <h1>PROJECTS</h1>
+          <p class="lead">Projects of Our Research Team</p>
+      </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+   
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-md-9 col-md-offset-2">
+
+        <!-- Title -->
+        <h2 class="mt-4">Adaptive Resource Views for Containers</h2>
+
+        <!-- Author -->
+        <p class="lead">
+          by Hang Huang ,Jia Rao ,Song Wu ,Hai Jin ,Kun Suo ,and Xiaofeng Wu 
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Published on HPDC 2019</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="../images/AdaptiveResourceViewsforContainers.png" width="600" height="400" alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+
+        <p>As OS-level virtualization advances,container shave become a viable alternative to
+            virtual machines in deploying applications in the cloud.Unlike virtual machines,
+            which allow guest OSes to run atop virtual hardware, containers have direct access
+            to physical hardware and share one OS kernel. While the absence of virtual hardware
+            abstractions eliminates most virtualization over head,it presents unique challenges
+            for containerized applications to efficiently utilize the underlying hardware. The
+            lack of hardware abstraction exposes the total amount of resources that are shared
+            among all containers to each individual container.Parallel run times(e.g.,OpenMP)
+            and managed programming languages(e.g.,Java) that rely on OS-exported information
+            for resource management could suffer from suboptimal performance.</p>
+        
+        <p>In this paper,we develop a per-container view of resources to export information on
+            the actual resource allocation to containerized applications.The central design
+            of the resource view is a per-container <code>sys_namespace</code> that calculates
+            the effective capacity of CPU and memory in the presence of resource sharing among
+            containers.We further create a virtual <code>sysfs</code> to seamlessly interface user space
+            applications with <code>sys_namespace</code>. We use two case studies to demonstrate how to leverage
+            the continuously updated resource view to enable elasticity in the HotSpot JVM and
+            OpenMP. Experimental results show that an accurate view of resource allocation leads
+            to more appropriate configurations and improved performance in a variety of containerized applications.</p>
+
+        <hr>
+      </div>
+
+        <div class="col-md-3 pt-md-4">
+            <h3>KEYWORDS</h3>
+            <p class="text-danger keywords">Container</p>
+            <p class="text-danger keywords">Scheduling</p>
+            <p class="text-danger keywords">Memory management</p>
+            <p class="text-danger keywords">Performance</p>
+        </div>
+        <p>
+            <a class="btn btn-secondary" href="../papers/AdaptiveResourceViewsforContainers.pdf" role="button">
+                View the paper
+            </a>
+        </p>
+     </div>
+   </div>	 
+
+  
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ContainerOS 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

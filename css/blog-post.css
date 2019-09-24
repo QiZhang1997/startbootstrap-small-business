@@ -1,0 +1,31 @@
+/*!
+ * Start Bootstrap - Blog Post (https://startbootstrap.com/template-overviews/blog-post)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
+ */
+/*body {
+  padding-top: 56px;
+}*/
+header{
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+body{
+  font-family: "Lucida Sans Unicode", serif;
+  font-size: 1.25rem;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: Times, sans-serif, Arial, "Noto Sans";
+  font-weight: bold;
+}
+
+p{
+  line-height: 2rem;
+}
+
+.keywords{
+  font-weight: bold;
+  font-size: 1.25rem;
+}

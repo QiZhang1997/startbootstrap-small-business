@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ContainerOS Blogs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/blog-post.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">Container Community</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">News
+                          <span class="sr-only">(current)</span>
+                      </a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <!--li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li-->
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-secondary text-white">
+      <div class="container text-center">
+          <h1>PROJECTS</h1>
+          <p class="lead">Projects of Our Research Team</p>
+      </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+   
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-md-9 col-md-offset-2">
+
+        <!-- Title -->
+        <h2 class="mt-4">CNTC: A Container Aware Network Traﬃc Control Framework</h2>
+
+        <!-- Author -->
+        <p class="lead">
+          by Lin Gu, Junjian Guan, Song Wu, Hai Jin, Jia Rao, Kun Suo, and Deze Zeng
+
+        </p>
+
+        <hr>
+
+        <!-- Date/Time -->
+        <p>Published on GPC 2019</p>
+
+        <hr>
+
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="../images/CNTC.png" width="1218" height="510"alt="">
+
+        <hr>
+
+        <!-- Post Content -->
+
+        <p>As a lightweight virtualization technology, containers are attracting much attention
+            and widely deployed in the cloud data centers. To provide consistent and reliable
+            performance, cloud providers should ensure resource isolation since each host consists
+            of multiple containers sharing the host kernel. As a mainstream container system,
+            Docker uses CGroup to provide CPU, memory, and disk resource isolation. Unfortunately,
+            all present solutions ignore the network resource, leading to the resource competition
+            and violating the performance of networked hosts. Although several researches discuss
+            the possibility of leveraging Linux Traﬃc Control (<i>TC</i>) module to guarantee network
+            bandwidth, they fail to capture the diversity and dynamics of container network resource
+            demands and therefore cannot be applied to container-level network traﬃc control.
+            In this paper, we propose a Container Network Traﬃc Control (<i>CNTC</i>) framework which
+            can provide strong isolation and container-level management for network resource
+            with joint consideration of container characteristics and quality of service. To
+            simplify the traﬃc control, we also design a series of APIs which allow inexpert
+            programers to perform complicated traﬃc control on each container. Through experiment
+            results, we show that CNTC works well in all network modes of containers.</p>
+
+        <hr>
+      </div>
+        <div class="col-md-3 pt-md-4">
+            <h3>KEYWORDS</h3>
+            <p class="text-danger keywords">Container network</p>
+            <p class="text-danger keywords">Traffic control</p>
+            <p class="text-danger keywords">Network isolation</p>
+        </div>
+        <p>
+            <a class="btn btn-secondary" href="../papers/CNTC.pdf" role="button">
+                View the paper
+            </a>
+        </p>
+   
+     </div>
+   </div>	 
+
+  
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ContainerOS 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
